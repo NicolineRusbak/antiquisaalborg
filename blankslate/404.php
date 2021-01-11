@@ -1,14 +1,17 @@
+<!-- This template is for displaying 404 pages  -->
+
 <?php get_header(); ?>
 <main id="content">
-<article id="post-0" class="post not-found">
-<header class="header">
-<h1 class="entry-title"><?php esc_html_e( 'Not Found', 'blankslate' ); ?></h1>
-</header>
-<div class="entry-content">
-<p><?php esc_html_e( 'Nothing found for the requested page. Try a search instead?', 'blankslate' ); ?></p>
-<?php get_search_form(); ?>
-</div>
-</article>
+    <article id="post-0" class="post not-found banner-flex">
+        <header class="header img-404-banner">
+        <!-- <img src="http://antiquisaalborg.local/wp-content/uploads/2021/01/Group-17.jpg" alt="" > -->
+            <h1 class="entry-title"><?php esc_html_e( '404', 'antiquistema' ); ?></h1>
+        </header>
+        <div class="entry-content">
+            <h2><?php esc_html_e( 'UPS!', 'antiquistema' ); ?></h2>
+            <p><?php esc_html_e( 'Du er faret vild. Heldigvis hjælper vi også andet end møbler videre.', 'antiquistema' ); ?></p>
+        </div>
+    </article>
 </main>
-<?php get_sidebar(); ?>
+<!-- <?php get_sidebar(); ?> -->
 <?php get_footer(); ?>
