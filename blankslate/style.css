@@ -79,21 +79,38 @@ body {
     padding: 1rem 0 1rem ;
 }
 
-/* --------- FOOTER TEST --------- */
+/* --------- FOOTER --------- */
 
 #footer {
-    background-color: #E9E5E0;
+    background-color: var(--primary-light);
     text-align: center;
+    border-top: 2px solid var(--primary-dark);
+    padding-top: 2vh;
 }
 
-#copyright {
-    font-weight: bold;
-    margin-bottom: 2vh;
+#footer h3 {
+    margin: 0 0 2vh 0;
+    font-size: 3rem;
 }
 
-.column {
+#footer p {
+    margin: 0 0 2vh 0;
+}
+
+
+#footer .fab {
+    color: var(--primary-dark);
+    font-size: 3rem;
+    margin: 0;
+}
+
+.footer-column {
     display: flex;
     flex-direction: column;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: black;
+    margin: 5px;
 }

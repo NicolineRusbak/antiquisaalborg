@@ -39,8 +39,6 @@ add_action( 'wp_enqueue_scripts', 'antiquistema_enqueue_scripts' );
 
 
 
-
-
 // add_action( 'wp_enqueue_scripts', 'blankslate_load_scripts' ); er skrevet om ovenover
 // function blankslate_load_scripts() {
 // wp_enqueue_style( 'blankslate-style', get_stylesheet_uri() );
