@@ -37,6 +37,7 @@ function antiquistema_enqueue_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'antiquistema_enqueue_scripts' );
 
+// Adobe fonts
 function wpb_add_google_fonts() {
  
     wp_enqueue_style( 'wpb-google-fonts', 'https://use.typekit.net/jnc6rkw.css', false ); 
