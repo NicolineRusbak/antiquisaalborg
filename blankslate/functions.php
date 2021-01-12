@@ -37,7 +37,12 @@ function antiquistema_enqueue_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'antiquistema_enqueue_scripts' );
 
-
+function wpb_add_google_fonts() {
+ 
+    wp_enqueue_style( 'wpb-google-fonts', 'https://use.typekit.net/jnc6rkw.css', false ); 
+    }
+     
+    add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
 
 // add_action( 'wp_enqueue_scripts', 'blankslate_load_scripts' ); er skrevet om ovenover
 // function blankslate_load_scripts() {

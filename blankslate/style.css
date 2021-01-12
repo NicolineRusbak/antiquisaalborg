@@ -86,6 +86,7 @@ body {
     text-align: center;
     border-top: 2px solid var(--primary-dark);
     padding-top: 2vh;
+    font-family: 'lust', sans-serif;
 }
 
 #footer h3 {
