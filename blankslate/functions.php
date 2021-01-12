@@ -22,7 +22,6 @@ add_theme_support( 'customize-selecctive-refresh-widgets' );
 // Load in our CSS
 function antiquistema_enqueue_styles() {
     wp_enqueue_style( 'main-css', get_stylesheet_directory_uri() . '/style.css', [], time(), 'all' );
-    wp_enqueue_script( 'jquery' );
 }
 add_action( 'wp_enqueue_scripts', 'antiquistema_enqueue_styles' );
 
@@ -32,10 +31,20 @@ register_nav_menus( [
 ]);
 
 
+// Load in our JS
+function antiquistema_enqueue_scripts() {
+    wp_enqueue_script( 'theme-js', get_stylesheet_directory_uri() . '/assets/js/theme.js', [], time(), true );
+}
+add_action( 'wp_enqueue_scripts', 'antiquistema_enqueue_scripts' );
+
+
+
+
+
 // add_action( 'wp_enqueue_scripts', 'blankslate_load_scripts' ); er skrevet om ovenover
 // function blankslate_load_scripts() {
 // wp_enqueue_style( 'blankslate-style', get_stylesheet_uri() );
-// wp_enqueue_script( 'jquery' );
+wp_enqueue_script( 'jquery' );
 // }
 
 // ----- ALT HERUNDER ER IKKE ÆNDRET I ------ FRA BLANKSLATE  --------
