@@ -28,6 +28,15 @@ body {
     margin: 0;
 }
 
+/* ------ GENERELT ------ */
+
+.entry-content {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 2.25em;
+    margin-inline-end: 2.25em;
+}
+
 
 
 /* --------- 404 NOT FOUND PAGE ---------*/
