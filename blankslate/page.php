@@ -23,6 +23,37 @@
     </article>
     <?php endwhile; endif; ?>
 
+    <section class="content-wrapper">
+
+        <article class="accordion-area">
+
+            <?php if( get_fields('') ): ?>
+
+                <div class="accordion">
+                    <button><?php the_field('overskrift'); ?><i class="fas fa-chevron-down icon"></i></button>
+                </div>
+                <p class="panel"><?php the_field('beskrivelse'); ?></p>
+
+
+                <div class="accordion">
+                    <button><?php the_field('overskrift2'); ?><i class="fas fa-chevron-down icon"></i></button>
+                </div>
+                <p class="panel"><?php the_field('beskrivelse2'); ?></p>
+
+
+                <div class="accordion">
+                    <button><?php the_field('overskrift3'); ?><i class="fas fa-chevron-down icon"></i></button>
+                </div>
+                <p class="panel"><?php the_field('beskrivelse3'); ?></p>
+
+            <?php endif; ?>
+
+        </article>
+
+    </section>
+
+
+
     <p> Template: page.php </p>
     
 </main>
