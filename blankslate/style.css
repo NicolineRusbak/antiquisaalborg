@@ -198,8 +198,7 @@ body {
 .hero-image {
     position: relative;
     text-align: center;
-    color: white;
-
+    color: var(--primary-dark);
 }
 
 .hero-image .entry-title {
