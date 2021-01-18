@@ -307,11 +307,12 @@ input {
 }
 
 .input-last {
-    padding-bottom: 5vh;
+    padding-bottom: 7.5vh;
 }
 
 .form-btn {
     text-align: center;
+    margin-bottom: 2vh;
 }
 
 /* --------- BUTTONS GENERAL --------- */
