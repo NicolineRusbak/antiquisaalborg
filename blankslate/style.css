@@ -315,7 +315,6 @@ ul {
     font-size: 1.7rem;
 }
 
-
 .panel {
     display: none;
     overflow: hidden;
@@ -357,6 +356,48 @@ input {
     margin-bottom: 2vh;
 }
 
+/* ------ FIND PAGE ------ */
+
+.find-page .panel h3 {
+    margin-left: 10px;
+}
+
+.find-page .panel p {
+    margin: 10px;
+}
+
+.some-text {
+    margin: 10px;
+}
+
+.some-btn-wrapper {
+    display: flex;
+}
+
+.some-btn {
+    width: 50%;
+    height: 50px;
+    margin: 0;
+    margin-top: 2vh;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.some-btn-fb {
+    background-color: var(--secondary-darker);
+}
+
+.some-btn-ig {
+ background-color: var(--secondary-light);
+}
+
+
 /* --------- BUTTONS GENERAL --------- */
 
 /* Sæt en div uden om button med class .btn-wrapper */
@@ -371,6 +412,11 @@ input {
     width: 40vw;
     background-color: inherit;
     padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'p22-underground', sans-serif;
+    font-weight: 400;
+    font-style: normal
 }
 
 .btn-light {
@@ -382,3 +428,7 @@ input {
     color: #ffffff;
     border: 2px solid #ffffff;
 }
+
+/* .btn:hover {
+    Idéer til hover tages imod med kyshånd
+}  */
