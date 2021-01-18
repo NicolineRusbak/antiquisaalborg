@@ -68,7 +68,12 @@ body {
     margin-inline-end: 2.25em;
 }
 
-
+.content-wrapper {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 2.25em;
+    margin-inline-end: 2.25em;
+}
 
 /* --------- 404 NOT FOUND PAGE ---------*/
 
@@ -277,6 +282,43 @@ ul {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin-top: 0;
+}
+
+
+/* Accordion */
+
+.accordion button {
+    background-color: var(--primary-light); 
+    border: none;
+    border-bottom: 2px solid var(--primary-dark);
+    color: var(--primary-dark);
+    padding: 1rem 0;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.3rem;
+    width: 100%;
+    font-family: 'mr-eaves-modern', sans-serif;
+}
+
+.accordion button:active {
+    border-style: none;
+}
+
+.accordion button:focus {
+    outline: none;
+}
+
+.accordion button .icon {
+    float: right;
+    font-size: 1.7rem;
+}
+
+
+.panel {
+    display: none;
+    overflow: hidden;
 }
 
 
