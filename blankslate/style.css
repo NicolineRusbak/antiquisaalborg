@@ -222,19 +222,23 @@ ul {
 /* TABS FRONTPAGE */
 
 .tablink {
-    background-color: #555;
-    color: white;
+    background-color: var(--primary-light);
+    color: var(--primary-dark);
     float: left;
     border: none;
+    border-bottom: 1px solid #b5b5b5;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
     width: 50%;
+    height: 6rem;
+    font-family: 'lust';
+    font-size: 30px;
 }
 
 .tablink:hover {
     background-color: #777;
 }
+
 
 .tabcontent {
     display: none;
@@ -246,6 +250,7 @@ ul {
 .text {
   display: none;
 }
+
 .show {
   display: block;
 }
