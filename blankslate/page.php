@@ -11,20 +11,17 @@
 
             </div>
 
+            <?php edit_post_link(); ?>
+
         </header>
 
         <div class="entry-content">
-            <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        
-                <?php the_content(); ?>
 
-            </div>
+            <?php the_content(); ?>
 
         </div>
-
     </article>
     <?php endwhile; endif; ?>
-
 
     <p> Template: page.php </p>
     
