@@ -43,8 +43,6 @@ h3 {
     font-family: 'mr-eaves-modern', sans-serif;
     font-weight: 300;
     font-style: normal;
-    margin-block-start: 1rem;
-    margin-block-end: 1rem;
 }
 
 p /* + knapper */ {
@@ -70,20 +68,12 @@ body {
     margin-inline-end: 2.25em;
 }
 
-/* .content-wrapper {
+.content-wrapper {
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 2.25em;
     margin-inline-end: 2.25em;
-} */
-
-.content-wrapper {
-    padding-block-start: 2em;
-    padding-block-end: 2em;
-    padding-inline-start: 2.25em;
-    padding-inline-end: 2.25em;
 }
-
 
 /* --------- 404 NOT FOUND PAGE ---------*/
 
@@ -194,6 +184,10 @@ ul {
 
 /* --------- FRONTPAGE --------- */
 
+.entry-title {
+    display: none;
+}
+
 .frontpage-wrapper {
     margin: 0;
     padding: 0;
@@ -217,28 +211,29 @@ ul {
 
 .frontpage-description {
     background-color: var(--secondary-light);
+    padding: 5px;
+}
+
+#video-115-1 {
+    display: none;
 }
 
 /* TABS FRONTPAGE */
 
 .tablink {
-    background-color: var(--primary-light);
-    color: var(--primary-dark);
+    background-color: #555;
+    color: white;
     float: left;
     border: none;
-    border-bottom: 1px solid #b5b5b5;
     outline: none;
     cursor: pointer;
+    padding: 14px 16px;
     width: 50%;
-    height: 6rem;
-    font-family: 'lust';
-    font-size: 30px;
 }
 
 .tablink:hover {
     background-color: #777;
 }
-
 
 .tabcontent {
     display: none;
@@ -250,7 +245,6 @@ ul {
 .text {
   display: none;
 }
-
 .show {
   display: block;
 }
@@ -260,6 +254,11 @@ ul {
     color: #ffffff;
 }
 
+/* TABS CONTENT */
+
+.frontpage-text {
+    padding: 10px;
+}
 
 /* ----- BLOG SIDE ----- */
 .article-teaser {
@@ -274,11 +273,11 @@ ul {
 }
 
 
-/* -------- Hero billeder -------- */
+/* ---------------- */
 .hero-image {
     position: relative;
     text-align: center;
-    color: var(--primary-dark);
+    color: white;
 
 }
 
@@ -289,6 +288,7 @@ ul {
     transform: translate(-50%, -50%);
     margin-top: 0;
 }
+
 
 /* Accordion */
 
@@ -323,6 +323,7 @@ ul {
     display: none;
     overflow: hidden;
 }
+
 
 /* ------ CONTACT PAGE ------ */
 
@@ -360,6 +361,31 @@ input {
 }
 
 /* ------ FIND PAGE ------ */
+
+.find-page-wrapper {
+    margin: 0;
+    padding: 0;
+}
+
+.none {
+    display: none;
+}
+
+.find-hero-image {
+    height: 35vh;
+    width: 100%;
+    /* background-image: url(''); */
+}
+
+.find-hero-text {
+    margin-top: 15vh;
+    margin-left: 5vw;
+}
+
+.find-hero-text p {
+    font-family: 'lust', sans-serif;
+    font-size: 30px;
+}
 
 .find-page .panel h3 {
     margin-left: 10px;
@@ -408,20 +434,18 @@ input {
     display: flex;
     justify-content: center;
     padding-bottom: 2vh;
-    padding-top: 3vh;
 }
 
 /* selve knapperne */
 .btn {
-    width: 100%;
-    height: 3.4rem;
+    width: 40vw;
     background-color: inherit;
     padding: 10px;
     cursor: pointer;
+    font-size: 16px;
     font-family: 'p22-underground', sans-serif;
     font-weight: 400;
     font-style: normal
-    font-size: 18px;
 }
 
 .btn-light {
@@ -434,6 +458,139 @@ input {
     border: 2px solid #ffffff;
 }
 
+.hero-btn {
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    display: none;
+}
+
 /* .btn:hover {
     Idéer til hover tages imod med kyshånd
 }  */
+
+@media only screen and (min-device-width : 768px) {
+
+    /* ------ FRONTPAGE ------ */
+
+    header {
+        z-index: 10;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    .frontpage-wrapper {
+        width: 100vw;
+    }
+
+    #video-115-1 {
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: auto;
+    }
+
+    .frontpage-hero-text {
+        background-color: var(--secondary-light);
+        width: 95vw;
+        margin: 0;
+        padding-left: 5vw;
+    }
+
+    .frontpage-hero-text p {
+        font-size: 80px;
+    }
+
+    .frontpage-description {
+        background-color: var(--secondary-light);
+        padding-top: 5vh;
+        padding-left: 5vw;
+        font-size: 2px;
+    }
+
+    .frontpage-description p {
+        font-size: 18px;
+    }
+
+
+    /* ------ FIND PAGE ------ */
+
+    .find-page-wrapper {
+        width: 100vw;
+    }
+
+    .find-hero-image {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .find-hero-btns {
+        margin-top: 20vh;
+    }
+
+    .hero-btn {
+        display: block;
+    }
+
+    .find-page {
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px auto
+    }
+
+    .accordion {
+        width: 70vw;
+        margin: 5vh;
+    }
+
+    .accordion button {
+        cursor: pointer;
+    }
+
+    .accordion p {
+        width: 70vw;
+    }
+
+    .btn-wrapper .btn {
+        width: 15vw
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .flex img {
+        width: 50vw;
+        height: auto;
+        margin-left: 2vw;
+    }
+
+    .none {
+        display: block;
+    }
+
+    .find-hero-text p:last-of-type {
+        font-size: 18px;
+    }
+
+    .some-text {
+        width: 50vw;
+        padding-left: 5vw;
+    }
+
+    .some-image {
+        width: 50vw;
+    }
+
+    .some-btn-wrapper button {
+        height: 25vh;
+        font-size: 3rem;
+    }
+
+}
