@@ -11,15 +11,10 @@ Template Name: Find
 <header class="header">
 <h1 class="entry-title"><?php the_title(); ?></h1> <?php edit_post_link(); ?>
 </header>
-    <div class="find-page-wrapper">
-        <section class="find-hero-image">
-            <div class="find-hero-text">
+    <div class="frontpage-wrapper">
+        <section class="frontpage-hero-image">
+            <div class="frontpage-hero-text">
                 <p>Vi <i class="fas fa-heart"></i> personlig indretning</p>
-                <p class="none">LAD OS FINDE LIDT SJÆL TIL DIN INDRETNING!</p>
-            </div>
-            <div class="find-hero-btns">
-                <button class="btn btn-light hero-btn">VORES UDVALG</button>
-                <button class="btn btn-light hero-btn">SÅDAN HANDLER VI</button>
             </div>
         </section>
     </div>
