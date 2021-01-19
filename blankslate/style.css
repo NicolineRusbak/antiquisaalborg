@@ -271,6 +271,7 @@ ul {
     /* width: 100%; */
     /* margin: 0 auto 3rem; */
     box-shadow: 0px 3px 6px 1px #d1d1d1;
+    margin-bottom: 2.5rem;
 }
 
 .article-teaser-text {
@@ -445,3 +446,38 @@ input {
 /* .btn:hover {
     Idéer til hover tages imod med kyshånd
 }  */
+
+
+
+@media only screen and (min-device-width: 768px) {
+    .blog-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .article-teaser {
+        width: 24vw;
+
+    }
+
+    .article-teaser-text {
+        min-height: 7rem;
+    }
+
+    .entry-content {
+        margin-block-start: 2em;
+        margin-block-end: 2em;
+        margin-inline-start: 8.75em;
+        margin-inline-end: 8.75em;
+    }
+    
+    
+    .content-wrapper {
+        padding-block-start: 2em;
+        padding-block-end: 2em;
+        padding-inline-start: 2.25em;
+        padding-inline-end: 2.25em;
+    }
+
+}
