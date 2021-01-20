@@ -102,6 +102,11 @@ img {
 
 /* --------- 404 NOT FOUND PAGE ---------*/
 
+#post-0 .entry-content {
+    margin: 0;
+    padding: 0;
+}
+
 .img-404-banner {
     background-image: url('http://antiquisaalborg.local/wp-content/uploads/2021/01/Group-17.jpg');
     background-repeat: no-repeat;
@@ -112,6 +117,45 @@ img {
     align-items: center;
     justify-content: center;
 }
+
+.text-404-tilt {
+    transform: rotate(25deg);
+    letter-spacing: 2vw;
+    font-size: 120px;
+    font-family: 'p22-underground', sans-serif;
+}
+
+.text-404-description {
+    background-color: var(--primary-dark);
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    width: 100vw;
+}
+
+.text-404-description h2 {
+    padding-top: 2vh;
+    font-size: 60px;
+    text-align: center;
+}
+
+.text-404-description p {
+    width: 75vw;
+    margin: 0px auto;
+    font-size: 18px;
+}
+
+.center-404 {
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.text-404-description button {
+    width: 70vw;
+}
+
 
 /* --------- header --------- */
 
@@ -703,14 +747,44 @@ input {
         display: block;
     }
 
-    /* ----- FRONTPAGE ----- */
+    /* ----- 404 PAGE NOT FOUND ----- */
 
-    /* header {
-        z-index: 10;
-        position: absolute;
-        top: 0;
-        width: 100%;
-    } */
+    #post-0 {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .text-404-tilt {
+        font-size: 250px;
+    }
+
+    .img-404-banner {
+        width: 50%;
+        height: 85vh;
+    }
+
+    .text-404-description {
+        width: 50%;
+        height: 85vh;
+    }
+
+    .text-404-description h2 {
+        font-size: 140px;
+        margin-bottom: 0;
+    }
+
+    .text-404-description p {
+        width: 25vw;
+        margin: 0px auto;
+    }
+
+    .center-404 {
+        width: 15vw;
+        margin: 0px auto;
+        margin-top: 2vh;
+    }
+
+    /* ----- FRONTPAGE ----- */
 
     .frontpage-wrapper {
         width: 100vw;
