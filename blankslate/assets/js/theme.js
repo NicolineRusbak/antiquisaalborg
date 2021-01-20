@@ -1,3 +1,5 @@
+// Burgermenu
+
 console.log('Loaded..');
 
 function openNav() {
@@ -10,8 +12,7 @@ function closeNav() {
 
 
 
-// Script til at skifte content (Sælg/Find) - det skal redigeres, men kan ikke få det til at virke uden de specifikke id's
-// Get the element with id="defaultOpen" and click on it
+// Script til at skifte content (Sælg/Find på forsiden)
 window.onload = function () {
   startTab();
 };
@@ -41,6 +42,7 @@ function tabChange(tabContent) {
 }
 
 
+// Accordion
 
 const acc = document.getElementsByClassName("accordion");
 let i;
