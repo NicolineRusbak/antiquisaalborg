@@ -27,10 +27,10 @@ Template Name: Frontpage
             Vi tror på indretning, der afspejler personlighed og at godt håndværk fortjener flere liv.</p>
         </section>
         <section class="category-tabs">
-            <button class="tablink" onclick="tabChange('London', this, 'red')" id="defaultOpen">Sælg</button>
-            <button class="tablink" onclick="tabChange('Paris', this, 'green')">Find</button>
+            <button class="tablink" onclick="tabChange('Sælg')" id="defaultOpen">Sælg</button>
+            <button class="tablink" onclick="tabChange('Find')">Find</button>
             
-            <div id="London" class="tabcontent content-wrapper">
+            <div id="Sælg" class="tabcontent content-wrapper">
                 <div class="sælg-gallery">
                     <img src="" alt=""> <!-- https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp Gallri inspiration måske?-->
                     Sælg galleri
@@ -47,7 +47,7 @@ Template Name: Frontpage
                 </div>
             </div>
 
-            <div id="Paris" class="tabcontent content-wrapper">
+            <div id="Find" class="tabcontent content-wrapper">
                 <div class="find-gallery">
                     <img src="" alt="">
                     Find galleri
