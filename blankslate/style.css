@@ -54,6 +54,7 @@ p /* + knapper */ {
     font-style: normal;
     margin: 0;
     padding: 0;
+    line-height: 1.5;
 }
 
 a {
@@ -208,6 +209,16 @@ footer a {
 .footer-column a {
     color: #000000;
     margin: 10px 0;
+}
+
+footer img {
+    display: none;
+}
+
+#copyright {
+    text-align: center;
+    font-family: 'p22-underground', sans-serif;
+    margin-bottom: 20px;
 }
 
 /* --------- FRONTPAGE --------- */
@@ -616,14 +627,6 @@ input {
         width: 100vw;
     }
 
-    #video-115-1 {
-        display: block;
-        margin: 0;
-        padding: 0;
-        width: 100vw;
-        height: auto;
-    }
-
     .frontpage-hero-text {
         background-color: var(--secondary-light);
         width: 95vw;
@@ -761,6 +764,10 @@ input {
         padding: 0;
     }
 
+    .alignnone .size-medium .wp-image-37 {
+        margin: 0;
+    }
+
     .some-btn-wrapper button {
         height: 40vh;
         font-size: 3rem;
@@ -790,8 +797,17 @@ input {
         justify-content: space-around;
     }
 
-    .footer-column {
-        text-align: left;
-
+    footer div {
+        width: 18vw;
     }
+
+    footer img {
+        display: block;
+        width: 210px;
+        margin: auto;
+    }
+
+    /* Video */
+    .wp-video { width: 100vw !important }
+    .wp-video video { width: 100vw !important; height: 100% !important; }
 }
