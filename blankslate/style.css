@@ -411,6 +411,9 @@ label {
 input {
     width: 75vw;
     margin: 1vh 0 2vh;
+    background-color: #D2CECA;
+    border: 2px solid var(--primary-dark);
+    height: 5vh;
 }
 
 .input-last {
