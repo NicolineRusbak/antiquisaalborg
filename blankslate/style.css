@@ -217,6 +217,10 @@ footer a {
     padding: 0;
 }
 
+.none {
+    display: none;
+}
+
 .frontpage-hero-image {
     height: 35vh;
     width: 100%;
@@ -350,6 +354,27 @@ footer a {
 
 /* ------ CONTACT PAGE ------ */
 
+.contact-wrapper {
+    margin: 0;
+    padding: 0;
+}
+
+.contact-hero-image {
+    height: 35vh;
+    width: 100%;
+    /* background-image: url(''); */
+}
+
+.contact-hero-text {
+    margin-top: 15vh;
+    margin-left: 5vw;
+}
+
+.contact-hero-text p {
+    font-family: 'lust', sans-serif;
+    font-size: 30px;
+}
+
 .contact-text {
     padding: 10px;
 }
@@ -390,6 +415,10 @@ input {
     padding: 0;
 }
 
+.find-hero-btns {
+    display: none;
+}
+
 .find-hero-image {
     height: 35vh;
     width: 100%;
@@ -404,6 +433,11 @@ input {
 .find-hero-text p {
     font-family: 'lust', sans-serif;
     font-size: 30px;
+}
+
+.find-hero-text .width-50 .none {
+    font-size: 25px;
+    font-family: 'mr-eaves-modern', sans-serif;
 }
 
 .find-page .panel h3 {
@@ -430,7 +464,6 @@ input {
     width: 50%;
     height: 50px;
     margin: 0;
-    margin-top: 2vh;
     padding: 0;
     border: none;
     cursor: pointer;
@@ -628,23 +661,20 @@ input {
     .find-hero-image {
         height: 35vh;
         width: 100%;
+        display: flex;
+        justify-content: space-evenly;
         /* background-image: url(''); */
     }
     
     .find-hero-text {
         justify-content: space-evenly;
-        margin-left: 5vh;
+        margin-left: 10vh;
     }
     
     .find-hero-text p {
         font-family: 'lust', sans-serif;
         font-size: 50px;
-        padding-left: 5vw;
-    }
-
-    .find-hero-image {
-        display: flex;
-        justify-content: space-evenly;
+        padding-left: 25vw;
     }
 
     .find-hero-btns {
@@ -731,16 +761,23 @@ input {
         padding: 0;
     }
 
-    .alignnone .size-medium .wp-image-37 {
-        margin: 0;
-    }
-
     .some-btn-wrapper button {
-        height: 25vh;
+        height: 40vh;
         font-size: 3rem;
     }
 
     /* ----- CONTACT ----- */
+
+    .contact-hero-image p {
+        font-family: 'lust', sans-serif;
+        font-size: 50px;
+        padding-left: 10vw;
+    }
+
+    .contact-description {
+        width: 70vw;
+        margin: 0px auto;
+    }
 
     .formular input {
         width: 40vw;
