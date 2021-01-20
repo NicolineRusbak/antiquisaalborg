@@ -22,6 +22,8 @@ Template Name: Sælg
 
 <div class="black-out">
     <div class="sell-form form-page-1">
+        <div class="numbers"><h1 class="active-number">1</h1><h1>2</h1><h1>3</h1></div>
+        <div class="beside">
         <article>
             <h2>Beskriv møblet</h2>
             <p>For at sikre den bedst mulige proces har vi brug for nogle informationer om møblet fra dig. Når du udfylder formularen er det derfor vigtigt at du forsøger at udfylde den så godt du kan. 
@@ -54,9 +56,12 @@ Template Name: Sælg
             </form>
             <button onclick="formular2()" class="btn btn-light">NÆSTE</button>
         </div>
+        </div>
     </div> 
 
     <div class="sell-form form-page-2" id="form-2">
+        <div class="numbers"><h1>1</h1><h1 class="active-number">2</h1><h1>3</h1></div>
+        <div class="beside">
         <article>
             <h2>Beskriv møblet</h2>
             <p>For at sikre den bedst mulige proces har vi brug for nogle informationer om møblet fra dig. Når du udfylder formularen er det derfor vigtigt at du forsøger at udfylde den så godt du kan. 
@@ -68,14 +73,15 @@ Template Name: Sælg
             <form action="/action_page.php">
                 <label for="img">Vælg billede:</label>
                 <input type="file" id="img" name="img" accept="image/*">
-                <input type="submit">
             </form>
             <button onclick="formular3()" class="btn btn-light">NÆSTE</button>
+        </div>
         </div>
     </div>
 
 
     <div class="sell-form form-page-3" id="form-3">
+        <div class="numbers"><h1>1</h1><h1>2</h1><h1 class="active-number">3</h1></div>
         <article>
             <h2>Om dig</h2>
             <p>Når du har udfyldt formularen og klikket afsend kontakter vi dig typisk indenfor 3-4 hverdage. </p>
@@ -95,12 +101,13 @@ Template Name: Sælg
                 <input type="text" name="postnummer">
 
             </form>
-            <button onclick="formular4()" class="btn btn-light">Afsend</button>
+            <button onclick="formular4()" class="btn btn-light">AFSEND</button>
         </div>
     </div> 
 
     <div class="sell-form form-page-4" id="form-4">
         <article>
+        <div class="numbers"><h1>1</h1><h1>2</h1><h1>3</h1></div>
             <h2>Tak</h2>
             <p>Formularen er nu afsendt. Der går typisk 3-4 hverdagen fra du har klikket afsend, til vi kontakter dig. 
                 I mellemtiden er du velkommen til at tjekke vores instagram eller facebook - måske har vi dit næste møbel stående! </p>
@@ -119,7 +126,7 @@ Template Name: Sælg
 
             </div>
         </article>
-        <a href="<?php echo site_url('/saelg'); ?>"><button class="btn btn-light">Tilbage</button></a>
+        <a href="<?php echo site_url('/saelg'); ?>"><button class="btn btn-light">LUK</button></a>
     </div>
 
     

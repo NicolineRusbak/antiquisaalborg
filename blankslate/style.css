@@ -584,6 +584,16 @@ input {
     background-color: #D2CECA;
 }
 
+.numbers {
+    display: flex;
+    justify-content: space-evenly;
+    color: #AFA9A7;
+}
+
+.active-number {
+    color: var(--primary-dark);
+}
+
 .align {
     display: flex;
 }
@@ -866,6 +876,57 @@ input {
         width: 40vw;
     }
 
+    /* ----- SÆLG ----- */
+
+    .beside {
+        display: flex;
+        justify-content: center;
+    }
+
+    .numbers {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .form-page-1 h2 {
+        margin-left: 5vw;
+    }
+
+    .form-page-1 p {
+        margin: 2rem;
+    }
+
+    .formular form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .form-page-2 .formular {
+        width: 45%;
+        margin-left: 5vw;
+    }
+
+    .form-page-2 article {
+        width: 45%;
+    }
+
+    .form-page-3 article {
+        text-align: center;
+    }
+
+    .form-page-4 {
+        text-align: center;
+    }
+
+    .form-page-4 p {
+        width: 50%;
+        margin: 0px auto;
+    }
+
+    .form-page-4 button {
+        margin-right: 5vw;
+    }
 
     /* ----- Footer ----- */
     footer {
