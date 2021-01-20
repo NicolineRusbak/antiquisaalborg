@@ -354,6 +354,27 @@ footer a {
 
 /* ------ CONTACT PAGE ------ */
 
+.contact-wrapper {
+    margin: 0;
+    padding: 0;
+}
+
+.contact-hero-image {
+    height: 35vh;
+    width: 100%;
+    /* background-image: url(''); */
+}
+
+.contact-hero-text {
+    margin-top: 15vh;
+    margin-left: 5vw;
+}
+
+.contact-hero-text p {
+    font-family: 'lust', sans-serif;
+    font-size: 30px;
+}
+
 .contact-text {
     padding: 10px;
 }
@@ -640,6 +661,8 @@ input {
     .find-hero-image {
         height: 35vh;
         width: 100%;
+        display: flex;
+        justify-content: space-evenly;
         /* background-image: url(''); */
     }
     
@@ -652,11 +675,6 @@ input {
         font-family: 'lust', sans-serif;
         font-size: 50px;
         padding-left: 25vw;
-    }
-
-    .find-hero-image {
-        display: flex;
-        justify-content: space-evenly;
     }
 
     .find-hero-btns {
@@ -749,6 +767,17 @@ input {
     }
 
     /* ----- CONTACT ----- */
+
+    .contact-hero-image p {
+        font-family: 'lust', sans-serif;
+        font-size: 50px;
+        padding-left: 10vw;
+    }
+
+    .contact-description {
+        width: 70vw;
+        margin: 0px auto;
+    }
 
     .formular input {
         width: 40vw;

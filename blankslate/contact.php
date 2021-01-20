@@ -10,9 +10,9 @@ Template Name: Contact
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <header class="header">
 </header>
-    <div class="frontpage-wrapper">
-        <section class="frontpage-hero-image">
-            <div class="frontpage-hero-text">
+    <div class="contact-wrapper">
+        <section class="contact-hero-image">
+            <div class="contact-hero-text">
                 <p>Kontakt</p>
             </div>
         </section>
