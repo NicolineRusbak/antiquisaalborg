@@ -217,6 +217,10 @@ footer a {
     padding: 0;
 }
 
+.none {
+    display: none;
+}
+
 .frontpage-hero-image {
     height: 35vh;
     width: 100%;
@@ -390,6 +394,10 @@ input {
     padding: 0;
 }
 
+.find-hero-btns {
+    display: none;
+}
+
 .find-hero-image {
     height: 35vh;
     width: 100%;
@@ -404,6 +412,11 @@ input {
 .find-hero-text p {
     font-family: 'lust', sans-serif;
     font-size: 30px;
+}
+
+.find-hero-text .width-50 .none {
+    font-size: 25px;
+    font-family: 'mr-eaves-modern', sans-serif;
 }
 
 .find-page .panel h3 {
@@ -430,7 +443,6 @@ input {
     width: 50%;
     height: 50px;
     margin: 0;
-    margin-top: 2vh;
     padding: 0;
     border: none;
     cursor: pointer;
@@ -633,13 +645,13 @@ input {
     
     .find-hero-text {
         justify-content: space-evenly;
-        margin-left: 5vh;
+        margin-left: 10vh;
     }
     
     .find-hero-text p {
         font-family: 'lust', sans-serif;
         font-size: 50px;
-        padding-left: 5vw;
+        padding-left: 25vw;
     }
 
     .find-hero-image {
@@ -731,12 +743,8 @@ input {
         padding: 0;
     }
 
-    .alignnone .size-medium .wp-image-37 {
-        margin: 0;
-    }
-
     .some-btn-wrapper button {
-        height: 25vh;
+        height: 40vh;
         font-size: 3rem;
     }
 
