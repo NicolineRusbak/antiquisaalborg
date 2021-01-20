@@ -74,9 +74,9 @@ img {
     height: auto;
 }
 
-.entry-title {
+/* .entry-title {
     display: none;
-}
+} */
 
 .entry-content {
     margin-block-start: 2em;
@@ -131,7 +131,7 @@ img {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     right: 0;
     background-color: var(--secondary-light);
@@ -403,11 +403,14 @@ form {
 
 label {
     text-align: left;
+    font-family: 'mr-eaves-modern', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
 }
 
 input {
     width: 75vw;
-    margin-bottom: 2vh;
+    margin: 1vh 0 2vh;
 }
 
 .input-last {
@@ -449,18 +452,6 @@ input {
 .find-hero-text .width-50 .none {
     font-size: 25px;
     font-family: 'mr-eaves-modern', sans-serif;
-}
-
-.find-page .panel h3 {
-    margin-left: 10px;
-}
-
-.find-page .panel p {
-    margin: 10px;
-}
-
-.some-text {
-    margin: 10px;
 }
 
 .some-image {
@@ -536,6 +527,95 @@ input {
 }  */
 
 
+/* ------ Swiper ------ */
+.swiper-container {
+    width: 100%;
+    height: 300px;
+}
+
+.swiper-slide {
+    background-color: rgb(184, 184, 184);
+}
+
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    opacity: 0;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: var(--secondary-light);
+}
+
+
+
+/* ----- VURDERINGSFORMULAR ----- */
+.black-out {
+    background-color: rgba(0, 0, 0, 0.623);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sell-form {
+    width: 84vw;
+    min-height: 115vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-light);
+    border: 2px solid var(--primary-dark);
+    margin-top: 20vh;
+    padding: 15px;
+}
+
+.sell-form article {
+    margin-bottom: 2rem;
+}
+
+.sell-form button {
+    float: right;
+}
+
+.sell-form input {
+    width: 97%;
+    height: 5vh;
+    border: 2px solid var(--primary-dark);
+    background-color: #D2CECA;
+}
+
+.align {
+    display: flex;
+}
+
+.checkbox-label {
+    text-transform: none;
+}
+
+#form-2 {
+    display: none;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 3.3vw;
+}
+
+#form-3 {
+    display: none;
+    z-index: 11;
+    position: absolute;
+    top: 0;
+    left: 3.3vw;
+}
+
+#form-4 {
+    display: none;
+    z-index: 12;
+    position: absolute;
+    top: 0;
+    left: 3.3vw;
+}
+
 @media only screen and (min-device-width: 768px) {
     /* ------ FONTS ------ */
 
@@ -560,10 +640,10 @@ input {
         padding: 0;
     }
 
-    /* img {
+   /* img {
         width: 100%;
         height: auto;
-    } */
+    }  */
 
     .btn {
         width: 15vw;
@@ -578,10 +658,6 @@ input {
     .article-teaser {
         width: 24vw;
 
-    }
-
-    .article-teaser-text {
-        min-height: 7rem;
     }
 
     .entry-content {
@@ -705,17 +781,17 @@ input {
     }
 
     .accordion {
-        width: 70vw;
-        margin-bottom: 5vh;
+        /* width: 70vw; */
+        margin-bottom: 6vh;
     }
 
     .accordion button {
         cursor: pointer;
     }
 
-    .accordion p {
+    /* .accordion p {
         width: 70vw;
-    }
+    } */
 
     .btn-wrapper .btn {
         width: 15vw
@@ -749,7 +825,7 @@ input {
 
     .some-text {
         width: 50vw;
-        padding-left: 5vw;
+        padding: 0 5vw;
     }
 
     .some-image {
@@ -769,7 +845,7 @@ input {
     }
 
     .some-btn-wrapper button {
-        height: 40vh;
+        height: 25vh;
         font-size: 3rem;
     }
 
@@ -790,11 +866,12 @@ input {
         width: 40vw;
     }
 
+
     /* ----- Footer ----- */
     footer {
         display: flex;
         flex-direction: row-reverse;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     footer div {
@@ -810,4 +887,5 @@ input {
     /* Video */
     .wp-video { width: 100vw !important }
     .wp-video video { width: 100vw !important; height: 100% !important; }
+
 }

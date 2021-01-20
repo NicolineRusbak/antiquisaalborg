@@ -62,3 +62,33 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+
+// Formular 
+
+function formular2() {
+  var form = document.getElementById("form-2");
+  if (form.style.display === "none") {
+    form.style.display = "block";
+  } else {
+    form.style.display = "none";
+  }
+}
+
+function formular3() {
+  var form = document.getElementById("form-3");
+  if (form.style.display === "none") {
+    form.style.display = "block";
+  } else {
+    form.style.display = "none";
+  }
+}
+
+function formular4() {
+  var form = document.getElementById("form-4");
+  if (form.style.display === "none") {
+    form.style.display = "block";
+  } else {
+    form.style.display = "none";
+  }
+}
