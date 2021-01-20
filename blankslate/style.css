@@ -551,8 +551,8 @@ input {
     .content-wrapper {
         padding-block-start: 2em;
         padding-block-end: 2em;
-        padding-inline-start: 2.25em;
-        padding-inline-end: 2.25em;
+        padding-inline-start: 8.75em;
+        padding-inline-end: 8.75em;
     }
 
     .grid {
