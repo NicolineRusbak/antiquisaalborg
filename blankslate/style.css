@@ -56,6 +56,11 @@ p /* + knapper */ {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: var(--primary-dark);
+}
+
 /* ------ GENERELT ------ */
 
 body {
@@ -170,13 +175,17 @@ ul {
     background-color: var(--primary-light);
     text-align: center;
     border-top: 2px solid var(--primary-dark);
-    padding-top: 2vh;
-    font-family: 'lust', sans-serif;
+    padding-top: 2rem;
 }
 
-#footer h3 {
+#footer h2 {
     margin: 0 0 2vh 0;
-    font-size: 3rem;
+    font-size: 2rem;
+}
+
+footer a {
+    font-family: 'p22-underground', sans-serif;
+    font-size: 20px;
 }
 
 #footer p {
@@ -193,12 +202,12 @@ ul {
 .footer-column {
     display: flex;
     flex-direction: column;
+
 }
 
 .footer-column a {
-    text-decoration: none;
     color: #000000;
-    margin: 5px;
+    margin: 10px 0;
 }
 
 /* --------- FRONTPAGE --------- */
@@ -306,6 +315,9 @@ ul {
 }
 
 /* Accordion */
+.show-more-tabs {
+    margin: 3rem 0;
+}
 
 .accordion button {
     background-color: var(--primary-light); 
@@ -321,10 +333,6 @@ ul {
     font-family: 'mr-eaves-modern', sans-serif;
 }
 
-.accordion button:active {
-    border-style: none;
-}
-
 .accordion button:focus {
     outline: none;
 }
@@ -337,6 +345,7 @@ ul {
 .panel {
     display: none;
     overflow: hidden;
+    margin: 1em 0;
 }
 
 /* ------ CONTACT PAGE ------ */
@@ -440,6 +449,11 @@ input {
  background-color: var(--secondary-light);
 }
 
+/* -------- GRID -------- */
+.hide-mobile {
+    display: none;
+}
+
 
 /* --------- BUTTONS GENERAL --------- */
 
@@ -502,10 +516,10 @@ input {
         padding: 0;
     }
 
-    img {
+    /* img {
         width: 100%;
         height: auto;
-    }
+    } */
 
     .btn {
         width: 15vw;
@@ -541,25 +555,29 @@ input {
         padding-inline-end: 2.25em;
     }
 
-    .desktop-grid {
+    .grid {
         display: grid;
         grid-template-columns: 45% 45%;
         grid-column-gap: 10%;
         /* align-content: center; */
     }
 
-    .desktop-grid-item {
+    .grid-item {
         align-self: center;
+    }
+
+    .hide-mobile {
+        display: block;
     }
 
     /* ----- FRONTPAGE ----- */
 
-    header {
+    /* header {
         z-index: 10;
         position: absolute;
         top: 0;
         width: 100%;
-    }
+    } */
 
     .frontpage-wrapper {
         width: 100vw;
@@ -728,4 +746,15 @@ input {
         width: 40vw;
     }
 
+    /* ----- Footer ----- */
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+
+    .footer-column {
+        text-align: left;
+
+    }
 }
