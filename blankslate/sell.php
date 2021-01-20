@@ -70,6 +70,7 @@ Template Name: Sælg
             Sælger du flere møbler er du velkommen til at skrive flere ord i et felt, eller sætte flueben i "jeg sælger flere møbler". </p>
         </article>
         <div class="formular">
+            <div class="image-box"></div>
             <form action="/action_page.php">
                 <label for="img">Vælg billede:</label>
                 <input type="file" id="img" name="img" accept="image/*">

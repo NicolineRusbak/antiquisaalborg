@@ -872,11 +872,11 @@ input {
         margin: 0px auto;
     }
 
+    /* ----- SÆLG ----- */
+
     .formular input {
         width: 40vw;
     }
-
-    /* ----- SÆLG ----- */
 
     .beside {
         display: flex;
@@ -926,6 +926,41 @@ input {
 
     .form-page-4 button {
         margin-right: 5vw;
+    }
+
+    .image-box {
+        height: 400px;
+        width: 100%;
+        background-color: #D2CECA;
+        border: 2px solid var(--primary-dark);
+        margin-bottom: 2vh;
+    }
+
+    #form-2 {
+        display: none;
+        z-index: 10;
+        position: absolute;
+        top: 0;
+        left: 3.3vw;
+        border-right: none;
+    }
+    
+    #form-3 {
+        display: none;
+        z-index: 11;
+        position: absolute;
+        top: 0;
+        left: 3.3vw;
+        border-right: none;
+    }
+    
+    #form-4 {
+        display: none;
+        z-index: 12;
+        position: absolute;
+        top: 0;
+        left: 3.3vw;
+        border-right: none;
     }
 
     /* ----- Footer ----- */
