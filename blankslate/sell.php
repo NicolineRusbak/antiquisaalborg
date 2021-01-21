@@ -34,6 +34,7 @@ Template Name: Sælg
     <section class="sell-quote">
         <p>"MIT LIV BLEV BEDRE DA JEG SOLGTE ET MØBEL TIL ANTIQUIS, SOM HÅNDTEREDE ALTING MEGET PROFESSIONELT."</br>- Louise 45 år</p>
     </section>
+    <i class="fas fa-angle-down bounce none"></i>
     <section class="howto-container" id="howto-scroll">
         <h2>Sådan gør du:</h2>
         <div class="sell-flex">
@@ -85,54 +86,43 @@ Template Name: Sælg
         <p>Skal du flytte eller blot have plads til nye møbler i din indretning hjælper vi gerne dine møbler videre. Vi har specialiseret os i at vurdere og prissætte møbler og indretningsobjekter med sjæl. For os er en god proces vigtig, vi sørger for at skræddersy processen, så den passer til din situation. Udfyld formularen så godt du kan, så kontakter vi dig med en pris! </p>
         <button class="btn btn-light" onclick="formular1()">FÅ DIN PRIS</button>
     </div>
-    <?php $galleri = get_field('galleri'); ?>
-    <section class="sell-gallery-desktop">
-        <figure class="gallery-item gallery-item-1">
-            <img class="gallery-img" src="<?php echo $galleri['img_1']; ?>" alt="">
-            DESKTOP PLACEHOLDER
-        </figure>
-        <figure class="gallery-item gallery-item-2">
-            <img class="gallery-img" src="<?php echo $galleri['img_2']; ?>" alt="">
-            DESKTOP PLACEHOLDER
-        </figure>
-        <figure class="gallery-item gallery-item-3">
-            <img class="gallery-img" src="<?php echo $galleri['img_3']; ?>" alt="">
-            DESKTOP PLACEHOLDER
-        </figure>
-        <figure class="gallery-item gallery-item-4">
-            <img class="gallery-img" src="<?php echo $galleri['img_4']; ?>" alt="">
-            DESKTOP PLACEHOLDER
-        </figure>
+    <?php $galleri = get_field('galleri'); echo($image['sizes']['medium'])?>
+    
+    <section class="sell-gallery-desktop entry-content">
+            <figure class="gallery-item gallery-item-1">
+                <img class="gallery-img" src="<?php echo $galleri['img_1']; ?>" alt="">
+            </figure>
+            <figure class="gallery-item gallery-item-2">
+                <img class="gallery-img" src="<?php echo $galleri['img_2']; ?>" alt="">
+            </figure>
+            <figure class="gallery-item gallery-item-3">
+                <img class="gallery-img" src="<?php echo $galleri['img_3']; ?>" alt="">
+            </figure>
+            <figure class="gallery-item gallery-item-4">
+                <img class="gallery-img" src="<?php echo $galleri['img_4']; ?>" alt="">
+            </figure>
         <figure class="gallery-item gallery-item-5">
             <img class="gallery-img" src="<?php echo $galleri['img_5']; ?>" alt="">
-            DESKTOP PLACEHOLDER
         </figure>
         <div class="gallery-item gallery-item-6">
             <h2>Processen i centrum</h2>
             <p>Skal du flytte eller blot have plads til nye møbler i din indretning hjælper vi gerne dine møbler videre. Vi har specialiseret os i at vurdere og prissætte møbler og indretningsobjekter med sjæl. For os er en god proces vigtig, vi sørger for at skræddersy processen, så den passer til din situation. Udfyld formularen så godt du kan, så kontakter vi dig med en pris! </p>
             <button class="btn btn-light" onclick="formular1()">FÅ DIN PRIS</button>
         </div>
-        <figure class="gallery-item gallery-item-7">
-            <img class="gallery-img" src="<?php echo $galleri['img_7']; ?>" alt="">
-            DESKTOP PLACEHOLDER
-        </figure>
         <figure class="gallery-item gallery-item-8">
             <img class="gallery-img" src="<?php echo $galleri['img_8']; ?>" alt="">
-            DESKTOP PLACEHOLDER
         </figure>
         <figure class="gallery-item gallery-item-9">
             <img class="gallery-img" src="<?php echo $galleri['img_9']; ?>" alt="">
-            DESKTOP PLACEHOLDER
         </figure>
         <figure class="gallery-item gallery-item-10">
             <img class="gallery-img" src="<?php echo $galleri['img_10']; ?>" alt="">
-            DESKTOP PLACEHOLDER
         </figure>
         <figure class="gallery-item gallery-item-11">
             <img class="gallery-img" src="<?php echo $galleri['img_10']; ?>" alt="">
-            DESKTOP PLACEHOLDER
         </figure>
     </section>
+
     <section class="sell-box">
         <div class="sell-box-image">
             <img src="<?php echo $galleri['img_12']; ?>" alt="">
