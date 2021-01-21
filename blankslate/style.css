@@ -28,6 +28,11 @@ Her kan man skrive en længere beskrivelse af temaet senere
     scroll-behavior: smooth;
 }
 
+html {
+    margin-top: 0 !important;
+}
+
+
 h1 {
     font-size: 40px;
     font-family: 'lust', serif;
@@ -63,7 +68,6 @@ p /* + knapper */ {
 
 .fa-bars {
     font-size: 50px;
-    padding-top: 5vh;
 }
 
 .logo {
@@ -86,7 +90,13 @@ body {
 img {
     width: 100%;
     height: auto;
+    object-fit: cover;
 }
+
+/* .hero-image img {
+    width: 100%;
+    height: 75vh;
+} */
 
 /* .entry-title {
     display: none;
@@ -172,11 +182,6 @@ img {
 
 
 /* --------- header --------- */
-
-.logo {
-    width: 140px;
-    height: 140px;
-}
 
 .burgermenu {
     position: absolute;
@@ -459,21 +464,16 @@ footer img {
     padding: 0;
 }
 
-.contact-hero-image {
-    height: 35vh;
-    width: 100%;
-    /* background-image: url(''); */
+
+.entry-title-contact {
+    position: absolute;
+    text-align: left;
 }
 
-.contact-hero-text {
-    margin-top: 15vh;
-    margin-left: 5vw;
+.contact-info {
+    display:none;
 }
 
-.contact-hero-text p {
-    font-family: 'lust', sans-serif;
-    font-size: 30px;
-}
 
 .contact-text {
     padding: 10px;
@@ -909,6 +909,11 @@ input {
         top: 0;
     } */
     
+    .logo {
+        width:140px;
+        height: 140px;
+        padding-top: 5vh;
+    }
 
 
 
@@ -1122,9 +1127,29 @@ input {
         padding-left: 10vw;
     }
 
+    .hero-image-contact img{
+        height: 70vh;
+    }
+
     .contact-description {
         width: 70vw;
         margin: 0px auto;
+    }
+
+    .entry-title-contact {
+        position: absolute;
+        top: 0;
+        left: 15%;
+        text-align: left;
+        width: 30%;
+    }
+
+    .contact-info {
+        display: block;
+    }
+
+    .contact-info-mobile {
+        display: none;
     }
 
     /* ----- SÆLG ----- */
@@ -1366,6 +1391,10 @@ input {
     .wp-video video { 
         width: 100vw !important; 
         height: 100% !important; 
+    }
+
+    .fa-bars {
+        padding-top: 5vh;
     }
 
 }
