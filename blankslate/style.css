@@ -63,7 +63,7 @@ p /* + knapper */ {
 
 .fa-bars {
     font-size: 50px;
-    /* padding-top: 5vh; */
+    padding-top: 5vh;
 }
 
 .logo {
@@ -446,6 +446,11 @@ footer img {
     overflow: hidden;
     margin: 1em 0;
 }
+
+.active i {
+    transform: rotate(180deg);
+    transition: all 0.5s;
+}​​
 
 /* ------ CONTACT PAGE ------ */
 
@@ -891,13 +896,14 @@ input {
         display: block;
     }
 
-    /* #header {
+    #header {
         z-index: 100;
         position: absolute;
         top: 0;
+        width: 100%
     }
 
-    #branding {
+    /* #branding {
         z-index: 100;
         position: absolute;
         top: 0;
