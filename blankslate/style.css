@@ -67,8 +67,8 @@ p /* + knapper */ {
 }
 
 .logo {
-    height: 140px;
-    width: 140px;
+    height: 70px;
+    width: 70px;
 }
 
 a {
@@ -174,8 +174,8 @@ img {
 /* --------- header --------- */
 
 .logo {
-    width: 70px;
-    height: 70px;
+    width: 140px;
+    height: 140px;
 }
 
 .burgermenu {
