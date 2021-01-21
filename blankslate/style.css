@@ -24,6 +24,10 @@ Her kan man skrive en længere beskrivelse af temaet senere
 
 /* ------ FONTS ------ */
 
+* {
+    scroll-behavior: smooth;
+}
+
 h1 {
     font-size: 40px;
     font-family: 'lust', serif;
@@ -505,13 +509,19 @@ input {
     display: none;
 }
 
+.some-text {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 2vh;
+}
+
 .some-btn-wrapper {
     display: flex;
 }
 
 .some-btn {
     width: 50%;
-    height: 50px;
+    height: 100px;
     margin: 0;
     padding: 0;
     border: none;
@@ -521,6 +531,8 @@ input {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 25px;
+    margin-bottom: 5vh;
 }
 
 .some-btn-fb {
@@ -592,16 +604,98 @@ input {
     color: var(--secondary-light);
 }
 
+/* ----- SELL PAGE ----- */
 
+.sell-quote {
+    padding-left: 5vw;
+    margin-right: 5vw;
+}
 
-/* ----- VURDERINGSFORMULAR ----- */
+.sell-mobile-process {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.sell-mobile-process button {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+ 
+.howto-container {
+    background-color: var(--secondary-light);
+}
+
+.howto-container h2 {
+    padding: 1.5rem;
+}
+
+.howto-text {
+    display: flex;
+    padding-right: 2vw;
+}
+
+.howto-number {
+    width: 20vw;
+    text-align: center;
+    margin-top: 0;
+}
+
+.sell-black-box {
+    background-color: var(--primary-dark);
+    color: white;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.sell-black-box h2 {
+    font-size: 50px;
+    margin-bottom: 2vh;
+    padding-top: 2vh;
+}
+
+.sell-black-box button {
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+}
+
+/* Grid sell page mobile */
+
+.sell-gallery-mobile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 15px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.sell-gallery-desktop {
+    display: none;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-item-1 {grid-area: 1 / 1 / 2 / 2;}
+.gallery-item-2 {grid-area: 1 / 2 / 2 / 3;}
+.gallery-item-3 {grid-area: 2 / 1 / 3 / 3;}
+
+/* ----- VURDERINGSFORMULAR SELL PAGE ----- */
+
 .black-out {
     background-color: rgba(0, 0, 0, 0.623);
-    height: 100%;
+    height: 320vh;
     width: 100%;
+    margin: 0;
+    padding: 0;
     position: absolute;
     top: 0;
     left: 0;
+    display: block; /* HUSK AT SÆTTE TIL DISPLAY BLOCK */
 }
 
 .sell-form {
@@ -649,10 +743,20 @@ input {
     text-transform: none;
 }
 
+#form-1 {
+    display: none;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: none;
+}
+
 #form-2 {
     display: none;
     z-index: 10;
     position: absolute;
+    height: 150vh;
     top: 0;
     left: 3.3vw;
 }
@@ -661,6 +765,7 @@ input {
     display: none;
     z-index: 11;
     position: absolute;
+    height: 150vh;
     top: 0;
     left: 3.3vw;
 }
@@ -669,6 +774,7 @@ input {
     display: none;
     z-index: 12;
     position: absolute;
+    height: 150vh;
     top: 0;
     left: 3.3vw;
 }
@@ -697,10 +803,15 @@ input {
         padding: 0;
     }
 
-   /* img {
-        width: 100%;
-        height: auto;
-    }  */
+    .fa-bars {
+        font-size: 50px;
+        /* padding-top: 5vh; */
+    }
+
+    .logo {
+        height: 140px;
+        width: 140px;
+    }
 
     .btn {
         width: 15vw;
@@ -951,6 +1062,119 @@ input {
 
     /* ----- SÆLG ----- */
 
+    .sell-hero h2 {
+        padding-left: 5vw;
+    }
+
+    .sell-hero button {
+        margin: 25px;
+    }
+
+    .sell-hero-flex {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .sell-hero-flex p {
+        padding-right: 20vw;
+        font-size: 30px;
+    }
+
+    .howto-container h2 {
+        font-size: 70px;
+        padding-left: 5vw;
+        padding-top: 5vh;
+    }
+
+    .howto-text {
+        display: flex;
+        flex-direction: column;
+        width: 20vw;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 5vh;
+    }
+
+    .sell-flex {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .sell-box {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .sell-margin-left {
+        margin-left: 7vw;
+    }
+
+    .sell-quote {
+        display: none;
+    }
+
+    .sell-box-image {
+        width: 50%;
+    }
+
+    .sell-black-box {
+        width: 50%;
+    }
+
+    .sell-black-box div {
+        text-align: center;
+    }
+
+    /* Grid sell dekstop */
+
+    .sell-gallery-mobile {
+        display: none;
+    }
+
+    .sell-mobile-process {
+        display: none;
+    }
+
+    .sell-gallery-desktop {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        grid-gap: 15px;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+
+    .gallery-item-1 { grid-area: 1 / 1 / 3 / 5; }
+    .gallery-item-2 { grid-area: 1 / 5 / 5 / 9; }
+    .gallery-item-3 { grid-area: 3 / 1 / 5 / 3; }
+    .gallery-item-4 { grid-area: 3 / 3 / 5 / 5; }
+    .gallery-item-5 { grid-area: 5 / 1 / 6 / 3; }
+    .gallery-item-6 {
+        grid-area: 5 / 3 / 8 / 6;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+    .gallery-item-6 h2 {
+        margin: 0;
+    }
+
+    .gallery-item-6 p {
+        margin-bottom: 2vh;
+    }
+
+    .gallery-item-6 button {
+        float: right;
+    }
+
+    .gallery-item-7 { grid-area: 5 / 6 / 8 / 9; }
+    .gallery-item-8 { grid-area: 6 / 1 / 8 / 3; }
+    .gallery-item-9 { grid-area: 8 / 1 / 10 / 4; }
+    .gallery-item-10 { grid-area: 8 / 4 / 10 / 6; }
+    .gallery-item-11 { grid-area: 8 / 6 / 10 / 9; }
+
+    /* Formular sell page */
+
     .formular input {
         width: 40vw;
     }
@@ -993,6 +1217,11 @@ input {
         text-align: center;
     }
 
+    .btn-align-center {
+        display: flex;
+        justify-content: flex-end;
+    }
+
     .form-page-4 {
         text-align: center;
     }
@@ -1006,27 +1235,31 @@ input {
         margin-right: 5vw;
     }
 
-    .image-box {
-        height: 400px;
-        width: 100%;
-        background-color: #D2CECA;
-        border: 2px solid var(--primary-dark);
-        margin-bottom: 2vh;
-    }
-
-    #form-2 {
+    #form-1 {
         display: none;
         z-index: 10;
         position: absolute;
         top: 0;
+        left: 0;
+        border-right: none;
+    }
+
+    #form-2 {
+        display: none;
+        z-index: 11;
+        position: absolute;
+        height: 100vh;
+        top: 0;
         left: 3.3vw;
         border-right: none;
+
     }
     
     #form-3 {
         display: none;
-        z-index: 11;
+        z-index: 12;
         position: absolute;
+        height: 100vh;
         top: 0;
         left: 3.3vw;
         border-right: none;
@@ -1034,8 +1267,9 @@ input {
     
     #form-4 {
         display: none;
-        z-index: 12;
+        z-index: 13;
         position: absolute;
+        height: 100vh;
         top: 0;
         left: 3.3vw;
         border-right: none;

@@ -66,6 +66,16 @@ for (i = 0; i < acc.length; i++) {
 
 // Formular 
 
+function formular1() {
+  var form = document.getElementById("form-1");
+  if (form.style.display === "none") {
+    form.style.display = "block";
+  } else {
+    form.style.display = "none";
+  }
+}
+
+
 function formular2() {
   var form = document.getElementById("form-2");
   if (form.style.display === "none") {

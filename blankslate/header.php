@@ -18,7 +18,7 @@
                     </div> -->
                 </div>
                 <div>
-                    <span class="burgermenu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                    <span class="burgermenu" style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fas fa-bars"></i></span>
                 </div>
 
                 <div id="mySidenav" class="sidenav">
