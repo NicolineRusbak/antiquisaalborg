@@ -28,6 +28,11 @@ Her kan man skrive en længere beskrivelse af temaet senere
     scroll-behavior: smooth;
 }
 
+html {
+    margin-top: 0 !important;
+}
+
+
 h1 {
     font-size: 40px;
     font-family: 'lust', serif;
@@ -61,6 +66,15 @@ p /* + knapper */ {
     line-height: 1.5;
 }
 
+.fa-bars {
+    font-size: 50px;
+}
+
+.logo {
+    height: 70px;
+    width: 70px;
+}
+
 a {
     text-decoration: none;
     color: var(--primary-dark);
@@ -76,7 +90,13 @@ body {
 img {
     width: 100%;
     height: auto;
+    object-fit: cover;
 }
+
+/* .hero-image img {
+    width: 100%;
+    height: 75vh;
+} */
 
 /* .entry-title {
     display: none;
@@ -97,10 +117,10 @@ img {
 } */
 
 .content-wrapper {
-    padding-block-start: 2em;
-    padding-block-end: 2em;
-    padding-inline-start: 2.25em;
-    padding-inline-end: 2.25em;
+    padding-block-start: 2rem;
+    padding-block-end: 2rem;
+    padding-inline-start: 2.25rem;
+    padding-inline-end: 2.25rem;
 }
 
 
@@ -162,11 +182,6 @@ img {
 
 
 /* --------- header --------- */
-
-.logo {
-    width: 70px;
-    height: 70px;
-}
 
 .burgermenu {
     position: absolute;
@@ -269,6 +284,15 @@ footer img {
     margin-bottom: 20px;
 }
 
+.breadcrumbs {
+    display: flex;
+}
+.breadcrumbs a, .breadcrumbs p {
+    font-size: 16px;
+    font-family: 'p22-underground', sans-serif;
+    margin: 0 5px;
+}
+
 /* --------- FRONTPAGE --------- */
 
 .frontpage-wrapper {
@@ -280,15 +304,13 @@ footer img {
     display: none;
 }
 
-.frontpage-hero-image {
-    height: 35vh;
-    width: 100%;
-    /* background-image: url(''); */
+.wp-video {
+    display: none;
 }
 
-.frontpage-hero-text {
-    margin-top: 15vh;
-    margin-left: 5vw;
+.frontpage-hero-image {
+    /* height: 35vh; */
+    width: 100%;
 }
 
 .frontpage-hero-text p {
@@ -296,9 +318,27 @@ footer img {
     font-size: 30px;
 }
 
+.column {
+    font-size: 22px;
+}
+
 .frontpage-description {
     background-color: var(--secondary-light);
 }
+
+.frontpage-description h3 {
+    font-size: 25px;
+}
+
+
+.frontpage-text h1 {
+    text-align: center;
+}
+
+.frontpage-gallery {
+    display: none;
+}
+
 
 /* TABS FRONTPAGE */
 
@@ -314,10 +354,11 @@ footer img {
     height: 6rem;
     font-family: 'lust';
     font-size: 30px;
+    text-transform: uppercase;
 }
 
 .tablink:hover {
-    background-color: #777;
+    background-color: #E4DED7;
 }
 
 
@@ -411,6 +452,11 @@ footer img {
     margin: 1em 0;
 }
 
+.active i {
+    transform: rotate(180deg);
+    transition: all 0.5s;
+}​​
+
 /* ------ CONTACT PAGE ------ */
 
 .contact-wrapper {
@@ -418,21 +464,16 @@ footer img {
     padding: 0;
 }
 
-.contact-hero-image {
-    height: 35vh;
-    width: 100%;
-    /* background-image: url(''); */
+
+.entry-title-contact {
+    position: absolute;
+    text-align: left;
 }
 
-.contact-hero-text {
-    margin-top: 15vh;
-    margin-left: 5vw;
+.contact-info {
+    display:none;
 }
 
-.contact-hero-text p {
-    font-family: 'lust', sans-serif;
-    font-size: 30px;
-}
 
 .contact-text {
     padding: 10px;
@@ -603,6 +644,8 @@ input {
 .swiper-button-next, .swiper-button-prev {
     color: var(--secondary-light);
 }
+
+
 
 /* ----- SELL PAGE ----- */
 
@@ -803,15 +846,10 @@ input {
         padding: 0;
     }
 
-    .fa-bars {
-        font-size: 50px;
-        /* padding-top: 5vh; */
-    }
-
-    .logo {
-        height: 140px;
-        width: 140px;
-    }
+   /* img {
+        width: 100%;
+        height: auto;
+    }  */
 
     .btn {
         width: 15vw;
@@ -837,10 +875,10 @@ input {
     
     
     .content-wrapper {
-        padding-block-start: 2em;
-        padding-block-end: 2em;
-        padding-inline-start: 8.75em;
-        padding-inline-end: 8.75em;
+        padding-block-start: 2rem;
+        padding-block-end: 2rem;
+        padding-inline-start: 8.75rem;
+        padding-inline-end: 8.75rem;
     }
 
     .grid {
@@ -858,44 +896,36 @@ input {
         display: block;
     }
 
-    /* ----- 404 PAGE NOT FOUND ----- */
-
-    #post-0 {
-        display: flex;
-        flex-direction: row-reverse;
+    #header {
+        z-index: 100;
+        position: absolute;
+        top: 0;
+        width: 100%
     }
 
-    .text-404-tilt {
-        font-size: 250px;
+    /* #branding {
+        z-index: 100;
+        position: absolute;
+        top: 0;
+    } */
+    
+    .logo {
+        width:140px;
+        height: 140px;
+        padding-top: 5vh;
     }
 
-    .img-404-banner {
-        width: 50%;
-        height: 85vh;
-    }
 
-    .text-404-description {
-        width: 50%;
-        height: 85vh;
-    }
 
-    .text-404-description h2 {
-        font-size: 140px;
-        margin-bottom: 0;
-    }
-
-    .text-404-description p {
-        width: 25vw;
-        margin: 0px auto;
-    }
-
-    .center-404 {
-        width: 15vw;
-        margin: 0px auto;
-        margin-top: 2vh;
-    }
 
     /* ----- FRONTPAGE ----- */
+
+    /* header {
+        z-index: 10;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    } */
 
     .frontpage-wrapper {
         width: 100vw;
@@ -903,9 +933,7 @@ input {
 
     .frontpage-hero-text {
         background-color: var(--secondary-light);
-        width: 95vw;
         margin: 0;
-        padding-left: 5vw;
     }
 
     .frontpage-hero-text p {
@@ -914,13 +942,52 @@ input {
 
     .frontpage-description {
         background-color: var(--secondary-light);
-        padding-top: 5vh;
-        padding-left: 5vw;
-        font-size: 2px;
     }
 
-    .frontpage-description p {
-        font-size: 18px;
+    .description-width {
+        display: flex;
+        width: 65vw;
+        justify-content: space-between;
+        line-height: 1.5;
+        margin-bottom: 2rem;
+    }
+
+    .frontpage-description h3 {
+        font-size: 25px;
+        text-transform: uppercase;
+        width: 30vw;
+    }
+
+    .grid-img-1 { grid-area: grid-img-1;}
+    .grid-img-2 { grid-area: grid-img-2;}
+    .grid-img-3 { grid-area: grid-img-3;}
+
+
+    .frontpage-gallery {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-areas:
+        'grid-img-1 grid-img-2 grid-img-2'
+        'grid-img-3 grid-img-2 grid-img-2';
+        grid-gap: 4rem;
+    }
+
+
+    .swiper-container {
+        display: none;
+    }
+
+    .about-antiquis {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .about-antiquis > div {
+        width: 50%;
+    }
+
+    .frontpage-text h1 {
+        text-align: left;
     }
 
 
@@ -975,7 +1042,7 @@ input {
         width: 70vw;
         display: flex;
         flex-direction: column;
-        margin: 0px auto
+        margin: 4rem auto
     }
 
     .accordion {
@@ -985,11 +1052,16 @@ input {
 
     .accordion button {
         cursor: pointer;
+        font-size: 1.5rem;
     }
 
     /* .accordion p {
         width: 70vw;
     } */
+
+    .btn-wrapper {
+        justify-content: flex-end;
+    }
 
     .btn-wrapper .btn {
         width: 15vw
@@ -1055,9 +1127,29 @@ input {
         padding-left: 10vw;
     }
 
+    .hero-image-contact img{
+        height: 70vh;
+    }
+
     .contact-description {
         width: 70vw;
         margin: 0px auto;
+    }
+
+    .entry-title-contact {
+        position: absolute;
+        top: 0;
+        left: 15%;
+        text-align: left;
+        width: 30%;
+    }
+
+    .contact-info {
+        display: block;
+    }
+
+    .contact-info-mobile {
+        display: none;
     }
 
     /* ----- SÆLG ----- */
@@ -1274,7 +1366,6 @@ input {
         left: 3.3vw;
         border-right: none;
     }
-
     /* ----- Footer ----- */
     footer {
         display: flex;
@@ -1293,7 +1384,17 @@ input {
     }
 
     /* Video */
-    .wp-video { width: 100vw !important }
-    .wp-video video { width: 100vw !important; height: 100% !important; }
+    .wp-video { 
+        width: 100vw !important;
+        display: block;
+    }
+    .wp-video video { 
+        width: 100vw !important; 
+        height: 100% !important; 
+    }
+
+    .fa-bars {
+        padding-top: 5vh;
+    }
 
 }
